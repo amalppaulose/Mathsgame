@@ -1,0 +1,152 @@
+html{
+    height: 100%;
+    background:  radial-gradient(circle, white,grey);
+    background-image:url(mathssbg.jpg);
+}
+#container
+{
+   height: 400px;
+   width: 550px; 
+   background-color: lightseagreen ;
+   margin: 100px auto;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 4px 4px 0px 0px;
+   position: relative;
+   
+}
+#score
+{
+   background-color: cadetblue;
+   color: black; 
+   padding: 11px;
+   position: absolute;
+   left: 500px;
+   box-shadow: 0px 4px black;   
+}
+
+#correct
+{
+    position: absolute;
+    left: 260px;
+    background-color:green;
+    color: black;
+    padding: 11px;
+    display: none;
+}
+
+#wrong
+{
+    position: absolute;
+    left: 100px;
+    background-color:red;
+    color: black;
+    padding: 11px;
+    display: none;
+}
+
+#question
+{
+    width: 400px;
+    height: 150px;
+    margin: 50px auto 10px auto;
+    background-color: lightskyblue;
+    box-shadow: 0px 4px black;
+    font-size: 100px;
+    text-align: center;
+    font-family:cursive,sans-serif ;
+    color: black;
+    border-radius: 20px;
+}
+
+#instructions
+{
+    width: 450px;
+    height: 50px;
+    background-color: lightsteelblue;
+    margin: 10px auto;
+    box-shadow: 0px 4px black;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 45px;
+}
+#choices
+{
+    width: 450px;
+    height: 100px;
+    margin: 5px auto;
+}
+
+.box
+{
+    width: 85px;
+    height: 85px;
+    background-color: white;
+    float: left;
+    margin-right: 36px;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0px 4px black;
+    text-align: center;
+    line-height: 80px;
+    position: relative; 
+    transition: all 0.1s;  
+}
+
+.box:hover, #startreset:hover
+{
+background-color: lightskyblue;
+color: black;
+box-shadow: 0px 4px lightskyblue;
+}
+.box:active, #startreset:active
+{
+box-shadow: 0px 0px lightskyblue ;
+top: 4px;
+}
+#box4
+{
+    margin-right: 0;
+}
+#startreset
+{
+    width: 85px;
+    padding: 10px;
+    background-color: white;
+    margin: 0px auto;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0px 4px black;
+    text-align: center;
+    position: relative; 
+    transition: all 0.1s;   
+}
+#timeremaining
+{
+    width: 160px;
+    padding: 10px;
+    position: absolute;
+    top: 395px;
+    left: 400px;
+    background-color: honeydew;
+    border-radius: 3px;
+    box-shadow: 0px 4px black;
+   
+    display: none;
+}
+#gameover
+{
+    height: 200px;
+    width: 500px;
+    background: linear-gradient(orange,yellow);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100px;
+    left: 45px;
+    z-index: 2;
+    display: none;
+
+}
